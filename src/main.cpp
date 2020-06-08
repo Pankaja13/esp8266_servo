@@ -12,9 +12,9 @@ ESP8266WebServer server(80);
 const char* ssid = WIFI_NAME;
 const char* password = PASSWORD;
 
-IPAddress staticIP(192, 168, 0, 202); //ESP static ip
+IPAddress staticIP(STATIC_IP); //ESP static ip
 IPAddress gateway(192, 168, 0, 1);   //IP Address of your WiFi Router (Gateway)
-IPAddress subnet(255, 255, 255, 0);  //Subnet mask
+IPAddress subnet(255, 255, 0, 0);  //Subnet mask
 IPAddress dns(8, 8, 8, 8);  //DNS
 
 int servoIndex = -1;
